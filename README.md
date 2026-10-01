@@ -1,7 +1,7 @@
 # Conformal Fractional Symplectic State-Space Model
 Official implementation of the Conformal Fractional Symplectic State-Space Model (CFS-SSM) for forecasting complex nonlinear dynamics and strange attractors.
 
-
+```text
 conformal-fractional-ssm/
 ├── README.md                 # Project documentation and usage instructions
 ├── requirements.txt          # Python dependencies
