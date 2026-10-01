@@ -12,6 +12,16 @@ Official implementation of the Conformal Fractional Symplectic State-Space Model
 
 * **Resolution of the Symplectic-Dissipative Paradox:** The framework provides rigorous mathematical proofs of absolute topological stability for non-equilibrium systems. By decoupling reversible symplectic routing from macroscopic fractional dissipation, the model permanently bounds global phase-space variance over infinite horizons and enforces exact phase-space volume contraction.
 
+## Architecture Overview
+The Conformal Fractional Symplectic State-Space Model (CFS-SSM) is structurally partitioned into four distinct operational stages to map raw exogenous sequences to the global macroscopic state:   
+* **Stage 1: Exogenous Sequence Embedding:** Raw empirical sequences possessing unbounded temporal variation are routed through a continuous Exponential Moving Average (EMA) low-pass filter. This explicitly bounds the temporal variation, forcing the embedded sequence into a globally Lipschitz continuous subspace.
+* **Stage 2: Symplectic Hamiltonian Generator Core:** The network synthesizes a non-autonomous vector field utilizing a Darboux indefinite parameterization to ensure the transition matrices strictly inhabit the symplectic Lie algebra. A Symplectic Orthogonal Cascade, a Hyperbolic Boost, and a Block-Diagonal Saddle are synthesized into the core Hamiltonian $H_{\theta}$, enforcing a strict spectral clamp to govern the network's topological state.
+* **Stage 3: M-ORA Filter Bank:** To bypass the historical $\mathcal{O}(L^2)$ matrix memory bottlenecks of true fractional integration, the continuous flow is distributed across $K$ parallel, dynamically independent sub-states. Utilizing a logarithmic pole fetch via the Modified Oustaloup Recursive Approximation (M-ORA), the hardware-accelerated conformal mapping transitions the flow while mathematically guaranteeing localized volume contraction.
+* **Stage 4: Macroscopic Fractional Superposition:** The final stage maps amplitude-matched Pad'{e} residue weights $w_k$ to linearly superimpose the independent branches. This successfully reconstructs the macroscopic fractional envelope $\mathcal{K}_K(t)$, capturing the global heavy-tailed fractal topology within a secure error limit without violating non-equilibrium thermodynamic bounds. 
+
+
+
+
 
 ## 📂 Repository Structure
 ```text
