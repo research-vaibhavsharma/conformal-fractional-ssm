@@ -19,7 +19,7 @@ The Conformal Fractional Symplectic State-Space Model (CFS-SSM) is structurally 
 * **Stage 3: M-ORA Filter Bank:** To bypass the historical $\mathcal{O}(L^2)$ matrix memory bottlenecks of true fractional integration, the continuous flow is distributed across $K$ parallel, dynamically independent sub-states. Utilizing a logarithmic pole fetch via the Modified Oustaloup Recursive Approximation (M-ORA), the hardware-accelerated conformal mapping transitions the flow while mathematically guaranteeing localized volume contraction.
 * **Stage 4: Macroscopic Fractional Superposition:** The final stage maps amplitude-matched Pad'{e} residue weights $w_k$ to linearly superimpose the independent branches. This successfully reconstructs the macroscopic fractional envelope $\mathcal{K}_K(t)$, capturing the global heavy-tailed fractal topology within a secure error limit without violating non-equilibrium thermodynamic bounds. 
 
-
+![Conformal Fractional Symplectic State-Space Model Architecture](csfssm_arch.pdf)
 
 
 
