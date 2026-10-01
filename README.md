@@ -34,7 +34,7 @@ conformal-fractional-ssm/
 │   ├── symplectic_core.py    # Phase 2: Symplectic Hamiltonian Generator (Darboux transitions)
 │   ├── m_ora.py              # Phase 3: Modified Oustaloup Recursive Approximation Filter Bank
 │   └── cfs_ssm.py            # Phase 4: Macroscopic Fractional Superposition & Full Model
-(Comming soon)
+(Coming soon)
 ├── examples/                 # Empirical evaluation scripts
 │   ├── solar_pv_forecasting.py # Training script for high-frequency photovoltaic data
 │   └── strange_attractor.py    # Autonomous generation of Fractional Lorenz-Lü-Chen attractors
